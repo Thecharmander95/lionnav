@@ -7,8 +7,7 @@
 # server "example.com", user: "deploy", roles: %w{app web}, other_property: :other_value
 # server "db.example.com", user: "deploy", roles: %w{db}
 
-
-
+server '10.0.0.221:2250', user: 'leo', roles: %w{app db web}
 
 # role-based syntax
 # ==================
@@ -61,13 +60,13 @@
 #     # password: "please use keys"
 #   }
 
-server "ec2-3-130-66-185.us-east-2.compute.amazonaws.com",
-  user: "ubuntu",
-  roles: %w{app db web},
-  ssh_options: {
-    user: "ubuntu", # overrides user setting above
-    keys: %w(/Users/leo/Documents/Programing/new3-web-server.pem),
-    forward_agent: false,
-    auth_methods: %w(publickey password),
-    password: "please use keys"
-  }
+# server "ec2-3-130-66-185.us-east-2.compute.amazonaws.com",
+#   user: "ubuntu",
+#   roles: %w{app db web},
+#   ssh_options: {
+#     user: "ubuntu", # overrides user setting above
+#     keys: %w(/Users/leo/Documents/Programing/new3-web-server.pem),
+#     forward_agent: false,
+#     auth_methods: %w(publickey password),
+#     password: "please use keys"
+#   }

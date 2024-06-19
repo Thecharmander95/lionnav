@@ -1,10 +1,12 @@
 # config valid for current version and patch releases of Capistrano
 lock "~> 3.18.1"
 
+append :linked_dirs, 'log', 'tmp/pids', 'tmp/cache', 'tmp/sockets', 'vendor/bundle', '.bundle', 'public/system', 'public/uploads'
+
 set :application, "lionnav"
 set :repo_url, "https://github.com/Thecharmander95/lionnav.git"
 set :branch, "master"
-set :deploy_to, "/home/ubuntu/#{fetch :application}"
+set :deploy_to, "/home/leo/Production/#{fetch :application}"
 append :linked_files, "config/master.key"
 
 # Default branch is :master
