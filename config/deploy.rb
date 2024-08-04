@@ -1,5 +1,4 @@
 # config valid for current version and patch releases of Capistrano
-lock "~> 3.18.1"
 
 append :linked_dirs, 'log', 'tmp/pids', 'tmp/cache', 'tmp/sockets', 'vendor/bundle', '.bundle', 'public/system', 'public/uploads'
 
